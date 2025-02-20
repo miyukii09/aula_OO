@@ -62,6 +62,11 @@ public class Exercicio1 extends javax.swing.JDialog {
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jButton1.setText("Calcular utilizando a Programação Orientada A Objetos");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel5.setText("A idade em meses é:");
@@ -132,6 +137,18 @@ public class Exercicio1 extends javax.swing.JDialog {
     private void TextIdadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextIdadeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TextIdadeActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        Exercicios objeto = new Exercicios();
+        
+        objeto.setNome(TextNome.getText());
+        objeto.setSexo(TextSexo.getText());
+        objeto.setIdade(Integer. parseInt(TextIdade.getText()));
+        
+        objeto.calcularMesesVividos();
+        
+       TextResultado.setText(objeto.getMeses()+"");
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
