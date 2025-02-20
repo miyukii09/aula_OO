@@ -12,12 +12,24 @@ public class Exercicios {
     private String sexo;
     private int idade;
     private int meses;
-    
+    private int ValConsulta;
+    private int QtdeConsulta;
+    private int salario;
+    private double SalBruto;
+    private double INSS;
+    private double SalLiquido;
+        
     public Exercicios()
     {
-        nome  = "Nao informado";
-        sexo  = "Nao informado";
-        idade = 0;
+        nome         = "Nao informado";
+        sexo         = "Nao informado";
+        idade        = 0;
+        ValConsulta  = 0;
+        QtdeConsulta = 0;
+        salario      = 0;
+        SalBruto     = 0;
+        INSS         = 0;
+        SalLiquido   = 0;
     }
 
     public String getNome() {
@@ -51,8 +63,69 @@ public class Exercicios {
     public int getMeses() {
         return meses;
     }
+
+    public int getQtdeConsulta() {
+        return QtdeConsulta;
+    }
+
+    public void setQtdeConsulta(int QtdeConsulta) {
+        this.QtdeConsulta = QtdeConsulta;
+    }
+
+    public int getSalario() {
+        return salario;
+    }
+
+    public void setSalario(int salario) {
+        this.salario = salario;
+    }
+
+    public int getValConsulta() {
+        return ValConsulta;
+    }
+
+    public void setValConsulta(int ValConsulta) {
+        this.ValConsulta = ValConsulta;
+    }
+
+    public void setINSS(double INSS) {
+        this.INSS = INSS;
+    }
+
+    public double getINSS() {
+        return INSS;
+    }
+
+    public void setSalBruto(double SalBruto) {
+        this.SalBruto = SalBruto;
+    }
+
+    public double getSalBruto() {
+        return SalBruto;
+    }
+
+    public void setSalLiquido(double SalLiquido) {
+        this.SalLiquido = SalLiquido;
+    }
+
+    public double getSalLiquido() {
+        return SalLiquido;
+    }
+    
+    
+    /* atividades*/
      public void calcularMesesVividos()
     {
         meses = idade*12;
     }
+     
+     public void calcularSalario()
+     {
+         salario = QtdeConsulta * ValConsulta;
+     }
+     
+     public void CalcularSararioLiquido()
+     {
+         SalLiquido = SalBruto - INSS;
+     }
 }
