@@ -11,7 +11,7 @@ public class Professor
        salario          = 0;
     }
     
-    public Professor(String name, int quantidadeAulas)
+    public Professor(String nome, int quantidadeAulas)
     {
         this.nome            = nome;
         this.quantidadeAulas = quantidadeAulas;
