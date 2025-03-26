@@ -2,18 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-
+import javax.swing.table.DefaultTableModel;
 /**
  *
  * @author aluno
  */
 public class Exemplo4 extends javax.swing.JFrame {
+    private FolhaPagamento escola;
 
     /**
      * Creates new form Exemplo4
      */
     public Exemplo4() {
         initComponents();
+        
+        escola = new FolhaPagamento();
     }
 
     /**
