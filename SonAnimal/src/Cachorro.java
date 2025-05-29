@@ -1,12 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+public class Cachorro extends Animal implements Son{
 
-/**
- *
- * @author aluno
- */
-public class Cachorro {
+    @Override
+    public void EmitirSon() {
+        System.out.println("Au Au");
+    }
+    
+    
     
 }

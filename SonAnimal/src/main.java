@@ -1,19 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-
-/**
- *
- * @author aluno
- */
 public class main {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Cachorro cachorro = new Cachorro();
+        Vaca vaca         = new Vaca();
+        Gato gato         = new Gato();
+        
+        cachorro.setNome("cachorro");
+        cachorro.getNome();
+        cachorro.EmitirSon();
+        
+        gato.setNome("gato");
+        gato.EmitirSon();
+        
+        vaca.setNome("vaca");
+        vaca.EmitirSon();
     }
     
 }

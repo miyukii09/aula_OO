@@ -1,12 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+public class Vaca extends Animal implements Son{
 
-/**
- *
- * @author aluno
- */
-public class Vaca {
+    @Override
+    public void EmitirSon() {
+        System.out.println("Muuuuu");
+    }
     
 }
